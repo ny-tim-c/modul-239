@@ -1,4 +1,58 @@
+html,
 body {
-  background-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.page-title {
   color: blueviolet;
+  font-size: medium;
+  font-weight: 1000;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.header {
+  border-radius: 4px;
+  border: 2px solid rgba(0, 162, 255, 0.991);
+  background-color: #43003983;
+  display: flex;
+  align-items: center;
+  text-shadow: 1px 1px 2px #3c0334;
+  box-shadow: 0px 4px 8px #3c0334;
+}
+
+.rezept {
+  border-radius: 4px;
+  border: 2px solid rgba(0, 162, 255, 0.991);
+  background-color: #cc18b16c;
+  align-items: center;
+  text-shadow: 1px 1px 2px #3c0334;
+  box-shadow: 0px 4px 8px #3c0334;
+  margin: 10vh;
+}
+
+.line {
+  border-radius: 4px;
+  border: 2px solid rgba(0, 162, 255, 0.991);
+  box-shadow: 0px 4px 8px #3c0334;
+  margin: 10vh;
+}
+.line_s {
+  border-radius: 1px;
+  border: 1px solid rgba(0, 162, 255, 0.991);
+  box-shadow: 0px 2px 2px #3c0334;
+  margin: 10vh;
 }

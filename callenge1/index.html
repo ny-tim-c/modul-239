@@ -3,227 +3,229 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-  <:/head>
-  _
+    <title>WebGL2 Shader Display</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
   <body>
-    <h1>Brownies</h1>
-    <img src="image.png" alt="">
-    <section class="mx-auto mb-4 max-w-[672px] md:mb-10">
-      <div class="space-y-4 lg:hidden">
-        <div class="space-y-6">
-          <p class="text-lg leading-7">
-            Einfache und saftige Schoko-Brownies selberzumachen kann ganz leicht
-            sein – wenn du dich an unser geniales Rezept hältst! Damit gehören
-            trockene Brownies der Vergangenheit an.
-          </p>
-        </div>
-      </div>
-      <div class="my-0 md:my-4">
-        <div class="flex items-center gap-4">
-          <h2 class="text-2xl font-medium">Zutaten</h2>
-          <div class="inline-flex items-center rounded bg-gray-50 p-2">
-            <div
-              class="mx-4 flex h-8 min-w-[104px] items-center justify-center px-4 text-lg font-medium"
-            >
-              <span class="truncate"
-                ><span class="font-bold">1</span>
-                <!-- -->Blech (klein)</span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="paragraph--ParagraphIngredientsBlock md:mt-10 mt-0">
-        <section class="my-4 md:my-8">
-          <div class="grid grid-cols-[minmax(90px,auto)_1fr]">
-            <div
-              class="col-span-2 grid grid-cols-subgrid justify-start gap-4 py-0 text-base leading-7 md:py-1 md:text-lg"
-            >
-              <div class="flex whitespace-nowrap font-bold">
-                <span>200</span><span class="ml-1">g</span>
-              </div>
-              <div class="flex-1"><span>Zartbitterschokolade</span></div>
-            </div>
-            <div
-              class="col-span-2 grid grid-cols-subgrid justify-start gap-4 py-0 text-base leading-7 md:py-1 md:text-lg"
-            >
-              <div class="flex whitespace-nowrap font-bold">
-                <span>125</span><span class="ml-1">g</span>
-              </div>
-              <div class="flex-1"><span>Butter</span></div>
-            </div>
-            <div
-              class="col-span-2 grid grid-cols-subgrid justify-start gap-4 py-0 text-base leading-7 md:py-1 md:text-lg"
-            >
-              <div class="flex whitespace-nowrap font-bold">
-                <span>1</span><span class="ml-1">Pck.</span>
-              </div>
-              <div class="flex-1"><span>Vanillezucker</span></div>
-            </div>
-            <div
-              class="col-span-2 grid grid-cols-subgrid justify-start gap-4 py-0 text-base leading-7 md:py-1 md:text-lg"
-            >
-              <div class="flex whitespace-nowrap font-bold"><span>3</span></div>
-              <div class="flex-1">
-                <span>Eier</span><span> <!-- -->(Gr. M)</span>
-              </div>
-            </div>
-            <div
-              class="col-span-2 grid grid-cols-subgrid justify-start gap-4 py-0 text-base leading-7 md:py-1 md:text-lg"
-            >
-              <div class="flex whitespace-nowrap font-bold">
-                <span>200</span><span class="ml-1">g</span>
-              </div>
-              <div class="flex-1">
-                <span>brauner<!-- --> </span><span>Zucker</span>
-              </div>
-            </div>
-            <div
-              class="col-span-2 grid grid-cols-subgrid justify-start gap-4 py-0 text-base leading-7 md:py-1 md:text-lg"
-            >
-              <div class="flex whitespace-nowrap font-bold">
-                <span>150</span><span class="ml-1">g</span>
-              </div>
-              <div class="flex-1">
-                <span>Weizenmehl</span><span> <!-- -->(Type 405)</span>
-              </div>
-            </div>
-            <div
-              class="col-span-2 grid grid-cols-subgrid justify-start gap-4 py-0 text-base leading-7 md:py-1 md:text-lg"
-            >
-              <div class="flex whitespace-nowrap font-bold">
-                <span>1</span><span class="ml-1">TL</span>
-              </div>
-              <div class="flex-1"><span>Backpulver</span></div>
-            </div>
-            <div
-              class="col-span-2 grid grid-cols-subgrid justify-start gap-4 py-0 text-base leading-7 md:py-1 md:text-lg"
-            >
-              <div class="flex whitespace-nowrap font-bold">
-                <span>1</span><span class="ml-1">Prise</span>
-              </div>
-              <div class="flex-1"><span>Salz</span></div>
-            </div>
-            <div
-              class="col-span-2 grid grid-cols-subgrid justify-start gap-4 py-0 text-base leading-7 md:py-1 md:text-lg"
-            >
-              <div class="flex whitespace-nowrap font-bold">
-                <span>1</span><span class="ml-1">EL</span>
-              </div>
-              <div class="flex-1"><span>Kakaopulver</span></div>
-            </div>
-            <div
-              class="col-span-2 grid grid-cols-subgrid justify-start gap-4 py-0 text-base leading-7 md:py-1 md:text-lg"
-            >
-              <div class="flex whitespace-nowrap font-bold"></div>
-              <div class="flex-1">
-                <span>etwas<!-- --> </span><span>Butter</span
-                ><span> <!-- -->für die Form</span>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      </div>
-    </section>
-<section class="recipe-preparation">
-    <h2>Zubereitung</h2>
-
-    <div class="recipe-equipment">
-        <p><strong>Du benötigst:</strong> 
-            Auflaufform (30 x 20 cm), Schüssel, kleiner Topf, Rührschüssel, Handrührgerät mit Schneebesen, scharfes Messer, Schneidebrett, Teigschaber
-        </p>
+    <canvas id="glcanvas"></canvas>
+    <div class="header">
+      <h1 class="page-title">MandelBrot-Rezept.ch</h1>
     </div>
-
-    <hr>
-
-    <div class="recipe-step">
-        <h3>1. Schritt</h3>
-        
-        <div class="recipe-ingredients-check">
-            <strong>Zutaten für diesen Schritt:</strong>
-            <ul>
-                <li>etwas Butter (für die Form)</li>
-                <li>150 g Zartbitterschokolade</li>
-                <li>125 g Butter</li>
-            </ul>
-        </div>
-
-        <div class="recipe-instructions">
-            <p>
-                Ofen auf <strong>175 Grad Ober-/ Unterhitze (Umluft: 155 Grad)</strong> vorheizen. 
-                Die <strong>Auflaufform (30 x 20 cm)</strong> gut einfetten.
-            </p>
-            <p>
-                Etwa 150 g der Zartbitterschokolade mit der Butter in einem kleinen Topf schmelzen. 
-                Etwas auskühlen lassen.
-            </p>
-        </div>
+    <div class="rezept">
+      <h2 class="ingredients-title">Zutaten</h2>
+      <p><em>Für ca. 30–40 Stück:</em></p>
+      <ul>
+        <li><strong>250 g</strong> Weizenmehl</li>
+        <li><strong>150 g</strong> Zucker</li>
+        <li><strong>1 TL</strong> Backpulver</li>
+        <li><strong>1 Prise</strong> Salz</li>
+        <li><strong>2</strong> Eier (Größe M)</li>
+        <li><strong>50 g</strong> weiche Butter</li>
+        <li>
+          <strong>1 Päckchen</strong> Vanillezucker (oder 1 TL Vanilleextrakt)
+        </li>
+        <li><strong>1 Fläschchen</strong> Bittermandelaroma</li>
+        <li><strong>150 g</strong> ganze Mandeln (mit Haut)</li>
+      </ul>
+      <hr class="line" />
+      <h2>Zubereitung</h2>
+      <h3>1. Den Teig vorbereiten</h3>
+      <ol>
+        <li>
+          <strong>Trockene Zutaten mischen:</strong> Mehl, Zucker, Backpulver
+          und eine Prise Salz in einer großen Schüssel vermengen.
+        </li>
+        <li>
+          <strong>Flüssige Zutaten hinzufügen:</strong> Die Eier, die weiche
+          Butter, den Vanillezucker und ein paar Tropfen Bittermandelaroma
+          dazugeben.
+        </li>
+        <li>
+          <strong>Kneten:</strong> Alles zuerst mit den Knethaken des
+          Handrührgeräts und dann kurz mit den Händen zu einem glatten Teig
+          verkneten.
+        </li>
+        <li>
+          <strong>Mandeln unterarbeiten:</strong> Zum Schluss die ganzen Mandeln
+          gleichmäßig unter den Teig arbeiten.
+        </li>
+        <li>
+          <strong>Kühlen:</strong> Den Teig in Frischhaltefolie wickeln und für
+          ca. <strong>30 Minuten in den Kühlschrank</strong> stellen.
+        </li>
+      </ol>
+      <hr class="line_s" />
+      <h3>2. Das erste Backen (Die Laibe)</h3>
+      <ol>
+        <li>
+          Den Backofen auf <strong>200 °C Ober-/Unterhitze</strong> (oder 180 °C
+          Umluft) vorheizen und ein Backblech mit Backpapier auslegen.
+        </li>
+        <li>Den Teig in 2 bis 3 gleich große Teile teilen.</li>
+        <li>
+          Jedes Teil auf einer leicht bemehlten Arbeitsfläche zu einer Rolle
+          (ca. 4–5 cm breit und flach gedrückt) formen.
+        </li>
+        <li>
+          Die Rollen mit etwas Abstand zueinander auf das Backblech legen.
+        </li>
+        <li>
+          Im Ofen für ca. <strong>12–15 Minuten</strong> vorbacken, bis sie
+          leicht goldgelb sind.
+        </li>
+      </ol>
+      <hr class="line_s" />
+      <h3>3. Schneiden und das zweite Backen</h3>
+      <ol>
+        <li>
+          Das Blech aus dem Ofen nehmen und die Teigrollen ca.
+          <strong>5 Minuten abkühlen lassen</strong> (sie müssen zum Schneiden
+          noch warm sein).
+        </li>
+        <li>Den Ofen auf <strong>150 °C</strong> herunterstellen.</li>
+        <li>
+          Die warmen Rollen mit einem scharfen Sägemesser schräg in ca.
+          <strong>1 cm dicke Scheiben</strong> schneiden.
+        </li>
+        <li>
+          Die Scheiben mit der Schnittfläche flach auf das Backblech legen.
+        </li>
+        <li>
+          Nochmals für ca. <strong>10–12 Minuten</strong> im Ofen rösten, bis
+          sie goldbraun und knusprig sind. Nach der Hälfte der Zeit die Kekse
+          einmal umdrehen.
+        </li>
+      </ol>
+      <hr class="line" />
+      <div class="hinweis">
+        <strong>Tipp zur Aufbewahrung:</strong> Lass das Mandelbrot nach dem
+        Backen komplett auskühlen. In einer luftdichten Blechdose aufbewahrt,
+        hält es sich mehrere Wochen frisch und bleibt knackig.
+      </div>
     </div>
-</section>
-<div class="recipe-step">
-        <h3>2. Schritt</h3>
-        
-        <div class="recipe-ingredients-check">
-            <strong>Zutaten für diesen Schritt:</strong>
-            <ul>
-                <li>3 Eier (Gr. M)</li>
-                <li>1 Pck. Vanillezucker</li>
-                <li>200 g brauner Zucker</li>
-                <li>(Zuvor geschmolzene Schokomasse)</li>
-            </ul>
-        </div>
+    <script>
+      // --- 1. Shader Source Code ---
 
-        <div class="recipe-instructions">
-            <p>
-                Eier mit Vanillezucker und braunem Zucker <strong>schaumig schlagen</strong>. 
-                Anschließend die etwas abgekühlte Schokomasse hinzugeben und unterrühren.
-            </p>
-        </div>
-    </div>
+      // Vertex Shader: Standard boilerplate to pass positions to the fragment shader
+      const vsSource = `#version 300 es
+            in vec2 position;
+            void main() {
+                gl_Position = vec4(position, 0.0, 1.0);
+            }
+        `;
 
-    <div class="recipe-step">
-        <h3>3. Schritt</h3>
+      // Fragment Shader: This is where the visual magic happens!
 
-        <div class="recipe-ingredients-check">
-            <strong>Zutaten für diesen Schritt:</strong>
-            <ul>
-                <li>150 g Weizenmehl (Type 405)</li>
-                <li>1 TL Backpulver</li>
-                <li>1 Prise Salz</li>
-                <li>1 EL Kakaopulver</li>
-                <li>Restliche Zartbitterschokolade (gehackt)</li>
-            </ul>
-        </div>
+      // coloring [[0.678 -0.252 0.338] [0.500 1.188 0.408] [0.548 0.288 1.068] [0.000 2.058 0.208]]
+      const fsSource = `#version 300 es
+            precision highp float;
+            uniform vec2 u_resolution;
+            uniform float u_time;
+            out vec4 fragColor;
+            vec3 palette( in float t )
+            {
+              vec3 a = vec3(0.707, 0.082, 0.657);
+              vec3 b = vec3(0.384, 0.922, 0.389);
+              vec3 c = vec3(1.171, 0.809, 0.731);
+              vec3 d = vec3(5.600, 0.734, 2.061);
+              return a + b * cos( 6.283185 * (c   * t + d ) );
+            }
+            void main() {
+                vec2 uv = (gl_FragCoord.xy - 0.5 * u_resolution.xy) / u_resolution.y;
+                vec2 c = uv * 2.5;
+                vec2 z = vec2(0., 0.); 
+                uv.x *= u_resolution.x / u_resolution.y;
+                int iter = 0;
+                for(int i = 0; i < 100 ; i++){
+                   z = vec2( z.x*z.x - z.y*z.y + c.x , 2.0*z.x*z.y + c.y);
+                    iter = i;
+                  if (dot(z, z) > 4.) {
+                    break; 
+                  }
+                }
+                vec3 color = palette(float(iter) / 100.0);
+                fragColor = vec4(color, 1.0);
+            }
+        `;
 
-        <div class="recipe-instructions">
-            <p>
-                Mehl mit Backpulver, Salz und Kakaopulver vermengen und unter die Eiermasse rühren. 
-                Die übrige Schokolade grob hacken und vorsichtig unter den Teig heben.
-            </p>
-            <p>
-                Den Teig in die vorbereitete Auflaufform geben, glattstreichen und im vorgeheizten Ofen 
-                <strong>circa 20 Minuten</strong> backen.
-            </p>
-            <p><em>Ergiebigkeit: Eine Form ergibt ca. 12 Brownies.</em></p>
-        </div>
-    </div>
+      // --- 2. WebGL Setup & Initialization ---
+      // (initalisation hat gemini gmacht ich han de shader aber selber gschribe)
+      const canvas = document.getElementById("glcanvas");
+      const gl = canvas.getContext("webgl2");
+      if (!gl) {
+        alert("WebGL 2 is not supported by your browser.");
+      }
+      // Helper function to compile shaders
+      function createShader(gl, type, source) {
+        const shader = gl.createShader(type);
+        gl.shaderSource(shader, source);
+        gl.compileShader(shader);
+        if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
+          console.error("Shader compile error:", gl.getShaderInfoLog(shader));
+          gl.deleteShader(shader);
+          return null;
+        }
+        return shader;
+      }
+      // Create and link the program
+      const vertexShader = createShader(gl, gl.VERTEX_SHADER, vsSource);
+      const fragmentShader = createShader(gl, gl.FRAGMENT_SHADER, fsSource);
+      const program = gl.createProgram();
+      gl.attachShader(program, vertexShader);
+      gl.attachShader(program, fragmentShader);
+      gl.linkProgram(program);
+      if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+        console.error("Program linking error:", gl.getProgramInfoLog(program));
+      }
+      // --- 3. Geometry Setup (Full-screen Quad) ---
+      // Two triangles that cover the entire screen
+      const positions = new Float32Array([
+        -1.0, -1.0, 1.0, -1.0, -1.0, 1.0, -1.0, 1.0, 1.0, -1.0, 1.0, 1.0,
+      ]);
+      const buffer = gl.createBuffer();
+      gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+      gl.bufferData(gl.ARRAY_BUFFER, positions, gl.STATIC_DRAW);
+      const positionLoc = gl.getAttribLocation(program, "position");
+      gl.enableVertexAttribArray(positionLoc);
+      gl.vertexAttribPointer(positionLoc, 2, gl.FLOAT, false, 0, 0);
+      // Get uniform locations
+      const resolutionLoc = gl.getUniformLocation(program, "u_resolution");
+      const timeLoc = gl.getUniformLocation(program, "u_time");
+      // --- 4. Render & Animation Loop ---
+      function resizeCanvas() {
+        if (
+          canvas.width !== window.innerWidth ||
+          canvas.height !== window.innerHeight
+        ) {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+          gl.viewport(0, 0, gl.canvas.width, gl.canvas.height);
+        }
+      }
+      function render(time) {
+        resizeCanvas();
 
-    <hr>
+        // Convert time from milliseconds to seconds
+        time *= 0.001;
 
-    <section class="recipe-tips">
-        <h3>💡 Mein Tipp: So werden deine Brownies perfekt!</h3>
-        <p>
-            Nimm die Brownies am besten <strong>1-2 Minuten früher</strong> aus dem Ofen. 
-            So bleiben sie innen richtig schön feucht und "fudgy".
-        </p>
-        <p>
-            <strong>Verzierung:</strong> Du kannst zusätzlich 100g Zartbitterschokolade im Wasserbad schmelzen 
-            und über die fertigen Brownies gießen. Yummy!
-        </p>
-    </section>
-</section>
-</body>
+        gl.clearColor(0, 0, 0, 1);
+        gl.clear(gl.COLOR_BUFFER_BIT);
+
+        gl.useProgram(program);
+
+        // Pass canvas resolution and elapsed time into the fragment shader
+        gl.uniform2f(resolutionLoc, canvas.width, canvas.height);
+        gl.uniform1f(timeLoc, time);
+
+        // Draw the full-screen quad
+        gl.drawArrays(gl.TRIANGLES, 0, 6);
+
+        // Request the next animation frame
+        requestAnimationFrame(render);
+      }
+
+      // Start the loop
+      requestAnimationFrame(render);
+    </script>
+  </body>
 </html>
